@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import ContactForm from '@/components/ContactForm';
 import ScrollAnimations from '@/components/ScrollAnimations';
@@ -25,6 +26,15 @@ export default function Home() {
 
       {/* Hero */}
       <header className="hero" id="hero">
+        <div className="hero__image-panel">
+          <Image
+            src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1200&q=80"
+            alt="Luxury med spa interior"
+            fill
+            style={{ objectFit: 'cover' }}
+            priority
+          />
+        </div>
         <div className="container hero__inner">
           <div className="hero__content">
             <p className="hero__tag">
@@ -75,6 +85,7 @@ export default function Home() {
       <section className="section section--light" id="problem">
         <div className="container">
           <div className="section__header">
+            <div className="line-accent" />
             <p className="section__tag">The Problem</p>
             <h2 className="section__title">
               Most Clinics Are Leaving Money on the Table
@@ -118,25 +129,85 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Solution */}
+      {/* Image Divider */}
+      <div className="image-divider image-divider--to-dark">
+        <Image
+          src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=1600&q=80"
+          alt="Modern aesthetic clinic treatment room"
+          fill
+          style={{ objectFit: 'cover' }}
+        />
+      </div>
+
+      {/* Solution — expanded with image */}
       <section className="section section--dark" id="solution">
         <div className="container">
-          <div className="section__header">
-            <p className="section__tag">The Solution</p>
-            <h2 className="section__title">The Clinic Growth System</h2>
-            <p className="section__subtitle">
-              A 90-day transformation that installs three layers of growth
-              inside your clinic &mdash; brand authority, revenue systems, and
-              growth infrastructure.
-            </p>
+          <div className="solution-visual">
+            <div className="solution-visual__image">
+              <Image
+                src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80"
+                alt="Medical professional in modern clinic"
+                fill
+                style={{ objectFit: 'cover' }}
+              />
+            </div>
+            <div className="solution-visual__content">
+              <p className="section__tag">The Solution</p>
+              <h2 className="section__title">The Clinic Growth System</h2>
+              <p>
+                A 90-day transformation that installs three layers of growth
+                inside your clinic &mdash; brand authority, revenue systems, and
+                growth infrastructure.
+              </p>
+              <div className="solution-features">
+                <div className="solution-feature">
+                  <div className="solution-feature__icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z" /><path d="M2 17l10 5 10-5" /><path d="M2 12l10 5 10-5" /></svg>
+                  </div>
+                  <div className="solution-feature__text">
+                    <h4>Brand Authority</h4>
+                    <p>Position your clinic as the premium choice</p>
+                  </div>
+                </div>
+                <div className="solution-feature">
+                  <div className="solution-feature__icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="1" x2="12" y2="23" /><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg>
+                  </div>
+                  <div className="solution-feature__text">
+                    <h4>Revenue Systems</h4>
+                    <p>Convert more consultations into paying clients</p>
+                  </div>
+                </div>
+                <div className="solution-feature">
+                  <div className="solution-feature__icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" /></svg>
+                  </div>
+                  <div className="solution-feature__text">
+                    <h4>Growth Analytics</h4>
+                    <p>Track every metric that drives your business</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
+      {/* Image Divider */}
+      <div className="image-divider image-divider--from-dark">
+        <Image
+          src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1600&q=80"
+          alt="Premium clinic waiting area"
+          fill
+          style={{ objectFit: 'cover' }}
+        />
+      </div>
 
       {/* Services */}
       <section className="section" id="services">
         <div className="container">
           <div className="section__header">
+            <div className="line-accent" />
             <p className="section__tag">What We Install</p>
             <h2 className="section__title">Three Layers of Growth</h2>
           </div>
@@ -245,6 +316,7 @@ export default function Home() {
       <section className="section section--light" id="process">
         <div className="container">
           <div className="section__header">
+            <div className="line-accent" />
             <p className="section__tag">How It Works</p>
             <h2 className="section__title">Your 90-Day Growth Journey</h2>
             <p className="section__subtitle">
@@ -299,6 +371,16 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Image Divider before Audit */}
+      <div className="image-divider image-divider--accent">
+        <Image
+          src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1600&q=80"
+          alt="Skincare treatment in luxury setting"
+          fill
+          style={{ objectFit: 'cover' }}
+        />
+      </div>
 
       {/* Growth Audit */}
       <section className="section section--accent" id="audit">
@@ -369,6 +451,7 @@ export default function Home() {
       <section className="section" id="results">
         <div className="container">
           <div className="section__header">
+            <div className="line-accent" />
             <p className="section__tag">Real Results</p>
             <h2 className="section__title">
               Built by Operators, Not Agencies
@@ -405,6 +488,7 @@ export default function Home() {
       <section className="section section--light" id="team">
         <div className="container">
           <div className="section__header">
+            <div className="line-accent" />
             <p className="section__tag">The Team</p>
             <h2 className="section__title">Your Growth Partners</h2>
             <p className="section__subtitle">
@@ -487,6 +571,16 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Image Divider before CTA */}
+      <div className="image-divider image-divider--to-dark">
+        <Image
+          src="https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=1600&q=80"
+          alt="Luxury wellness clinic reception"
+          fill
+          style={{ objectFit: 'cover' }}
+        />
+      </div>
 
       {/* CTA / Book */}
       <section className="section section--cta" id="book">
