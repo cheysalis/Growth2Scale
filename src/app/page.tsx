@@ -253,12 +253,12 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Layer 2 — Gabby */}
+            {/* Layer 2 — Gabbie */}
             <div className="service-card service-card--featured">
               <div className="service-card__number">02</div>
               <div className="service-card__header">
                 <h3>Social Media &amp; Content Strategy</h3>
-                <p className="service-card__lead">Led by Gabby</p>
+                <p className="service-card__lead">Led by Gabbie</p>
               </div>
               <p className="service-card__problem">
                 Solves: <em>&ldquo;We post but nothing grows.&rdquo;</em>
@@ -385,7 +385,7 @@ export default function Home() {
                 num: 3,
                 week: 'Weeks 3\u20138',
                 title: 'Implementation',
-                desc: 'Our full team goes to work. Chey builds your brand identity and website. Gabby installs your content strategy and organic growth systems. Katie installs consultation scripts and pricing optimization. Sam installs the CRM, automations, and analytics dashboards.',
+                desc: 'Our full team goes to work. Chey builds your brand identity and website. Gabbie installs your content strategy and organic growth systems. Katie installs consultation scripts and pricing optimization. Sam installs the CRM, automations, and analytics dashboards.',
                 deliverable: 'Fully Installed Growth Systems',
               },
               {
@@ -549,7 +549,7 @@ export default function Home() {
               },
               {
                 initial: 'G',
-                name: 'Gabby',
+                name: 'Gabbie',
                 role: 'Social Media & Content Strategy',
                 desc: 'Content strategist who builds organic growth systems, social media strategy, UGC pipelines, and influencer partnerships that drive trust and demand.',
                 featured: true,
