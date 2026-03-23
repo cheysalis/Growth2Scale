@@ -24,16 +24,22 @@ export default function Home() {
       <ScrollAnimations />
       <Navbar />
 
-      {/* Hero */}
+      {/* Hero with Video Background */}
       <header className="hero" id="hero">
-        <div className="hero__image-panel">
-          <Image
-            src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1200&q=80"
-            alt="Luxury med spa interior"
-            fill
-            style={{ objectFit: 'cover' }}
-            priority
-          />
+        <div className="hero__video-bg">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            poster="https://images.unsplash.com/photo-1540555700478-4be289fbec6e?w=1920&q=80"
+          >
+            <source
+              src="https://videos.pexels.com/video-files/3209828/3209828-uhd_2560_1440_25fps.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <div className="hero__video-overlay" />
         </div>
         <div className="container hero__inner">
           <div className="hero__content">
@@ -129,14 +135,21 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Image Divider */}
-      <div className="image-divider image-divider--to-dark">
-        <Image
-          src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=1600&q=80"
-          alt="Modern aesthetic clinic treatment room"
-          fill
-          style={{ objectFit: 'cover' }}
-        />
+      {/* Video Divider — Medspa Treatment */}
+      <div className="video-divider video-divider--to-dark">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1600&q=80"
+        >
+          <source
+            src="https://videos.pexels.com/video-files/6981411/6981411-uhd_2560_1440_25fps.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div className="video-divider__overlay video-divider__overlay--to-dark" />
       </div>
 
       {/* Solution — expanded with image */}
@@ -145,8 +158,8 @@ export default function Home() {
           <div className="solution-visual">
             <div className="solution-visual__image">
               <Image
-                src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80"
-                alt="Medical professional in modern clinic"
+                src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&q=80"
+                alt="Luxury skincare treatment at medspa"
                 fill
                 style={{ objectFit: 'cover' }}
               />
@@ -202,11 +215,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Image Divider */}
+      {/* Image Divider — Medspa Ambiance */}
       <div className="image-divider image-divider--from-dark">
         <Image
-          src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1600&q=80"
-          alt="Premium clinic waiting area"
+          src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=1600&q=80"
+          alt="Luxury medspa facial treatment"
           fill
           style={{ objectFit: 'cover' }}
         />
@@ -414,11 +427,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Image Divider before Audit */}
+      {/* Image Divider — Medspa Products */}
       <div className="image-divider image-divider--accent">
         <Image
-          src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1600&q=80"
-          alt="Skincare treatment in luxury setting"
+          src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=1600&q=80"
+          alt="Luxury medspa skincare products"
           fill
           style={{ objectFit: 'cover' }}
         />
@@ -621,14 +634,21 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Image Divider before CTA */}
-      <div className="image-divider image-divider--to-dark">
-        <Image
-          src="https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=1600&q=80"
-          alt="Luxury wellness clinic reception"
-          fill
-          style={{ objectFit: 'cover' }}
-        />
+      {/* Video Divider before CTA — Medspa Ambiance */}
+      <div className="video-divider video-divider--to-dark">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="https://images.unsplash.com/photo-1552693673-1bf958298935?w=1600&q=80"
+        >
+          <source
+            src="https://videos.pexels.com/video-files/5765285/5765285-uhd_2732_1440_25fps.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div className="video-divider__overlay video-divider__overlay--to-dark" />
       </div>
 
       {/* CTA / Book */}
