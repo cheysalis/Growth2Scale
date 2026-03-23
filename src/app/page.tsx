@@ -71,9 +71,9 @@ export default function Home() {
                 </span>
               </div>
               <div className="stat">
-                <span className="stat__number">3 Layers</span>
+                <span className="stat__number">4 Layers</span>
                 <span className="stat__label">
-                  Brand, Revenue, and Systems
+                  Brand, Content, Revenue, and Systems
                 </span>
               </div>
             </div>
@@ -155,9 +155,9 @@ export default function Home() {
               <p className="section__tag">The Solution</p>
               <h2 className="section__title">The Clinic Growth System</h2>
               <p>
-                A 90-day transformation that installs three layers of growth
-                inside your clinic &mdash; brand authority, revenue systems, and
-                growth infrastructure.
+                A 90-day transformation that installs four layers of growth
+                inside your clinic &mdash; creative brand identity, social content
+                strategy, revenue systems, and growth infrastructure.
               </p>
               <div className="solution-features">
                 <div className="solution-feature">
@@ -165,8 +165,17 @@ export default function Home() {
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z" /><path d="M2 17l10 5 10-5" /><path d="M2 12l10 5 10-5" /></svg>
                   </div>
                   <div className="solution-feature__text">
-                    <h4>Brand Authority</h4>
-                    <p>Position your clinic as the premium choice</p>
+                    <h4>Creative &amp; Brand Identity</h4>
+                    <p>Build a premium brand that commands authority</p>
+                  </div>
+                </div>
+                <div className="solution-feature">
+                  <div className="solution-feature__icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2" /><polyline points="8 21 12 17 16 21" /></svg>
+                  </div>
+                  <div className="solution-feature__text">
+                    <h4>Social &amp; Content Strategy</h4>
+                    <p>Organic content that builds trust and demand</p>
                   </div>
                 </div>
                 <div className="solution-feature">
@@ -209,44 +218,77 @@ export default function Home() {
           <div className="section__header">
             <div className="line-accent" />
             <p className="section__tag">What We Install</p>
-            <h2 className="section__title">Three Layers of Growth</h2>
+            <h2 className="section__title">Four Layers of Growth</h2>
           </div>
-          <div className="services-grid">
-            {/* Layer 1 */}
+          <div className="services-grid services-grid--4">
+            {/* Layer 1 — Chey */}
             <div className="service-card">
               <div className="service-card__number">01</div>
               <div className="service-card__header">
-                <h3>Brand &amp; Awareness</h3>
+                <h3>Creative Direction &amp; Brand Identity</h3>
                 <p className="service-card__lead">Led by Chey</p>
               </div>
               <p className="service-card__problem">
-                Solves: <em>&ldquo;People don&apos;t know about our clinic.&rdquo;</em>
+                Solves: <em>&ldquo;Our brand doesn&apos;t reflect our quality.&rdquo;</em>
               </p>
               <div className="service-card__services">
                 <h4>Services</h4>
                 <ul>
-                  <li>Branding refresh</li>
-                  <li>Website optimization</li>
-                  <li>Social media strategy</li>
-                  <li>Influencer partnerships</li>
-                  <li>UGC ad campaigns</li>
-                  <li>Creative direction</li>
+                  <li>Brand identity &amp; creative direction</li>
+                  <li>Website design &amp; development</li>
+                  <li>Visual identity systems</li>
+                  <li>Brand messaging &amp; positioning</li>
+                  <li>Business organization &amp; operations</li>
+                  <li>Brand photography direction</li>
                 </ul>
               </div>
               <div className="service-card__deliverables">
                 <h4>Deliverables</h4>
                 <ul>
-                  <li>Optimized Instagram presence</li>
-                  <li>Influencer partnerships</li>
-                  <li>UGC ad creatives</li>
+                  <li>Complete brand identity guide</li>
+                  <li>Website design &amp; build</li>
                   <li>Brand positioning strategy</li>
+                  <li>Operational workflow setup</li>
                 </ul>
               </div>
             </div>
 
-            {/* Layer 2 */}
+            {/* Layer 2 — Gabby */}
             <div className="service-card service-card--featured">
               <div className="service-card__number">02</div>
+              <div className="service-card__header">
+                <h3>Social Media &amp; Content Strategy</h3>
+                <p className="service-card__lead">Led by Gabby</p>
+              </div>
+              <p className="service-card__problem">
+                Solves: <em>&ldquo;We post but nothing grows.&rdquo;</em>
+              </p>
+              <div className="service-card__services">
+                <h4>Services</h4>
+                <ul>
+                  <li>Social media audits &amp; strategy</li>
+                  <li>Content direction (Reels, TikTok, Shorts)</li>
+                  <li>Posting strategy &amp; organic growth systems</li>
+                  <li>Social messaging &amp; content positioning</li>
+                  <li>UGC creator sourcing &amp; management</li>
+                  <li>Influencer partnerships &amp; collaborations</li>
+                  <li>Social engagement &amp; audience nurturing</li>
+                </ul>
+              </div>
+              <div className="service-card__deliverables">
+                <h4>Deliverables</h4>
+                <ul>
+                  <li>Organic content strategy</li>
+                  <li>Content calendar &amp; posting schedule</li>
+                  <li>UGC &amp; influencer pipeline</li>
+                  <li>Engagement &amp; growth playbook</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Layer 3 — Katie */}
+            <div className="service-card">
+              <div className="service-card__number">03</div>
               <div className="service-card__header">
                 <h3>Sales &amp; Revenue Strategy</h3>
                 <p className="service-card__lead">Led by Katie</p>
@@ -277,9 +319,9 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Layer 3 */}
+            {/* Layer 4 — Sam */}
             <div className="service-card">
-              <div className="service-card__number">03</div>
+              <div className="service-card__number">04</div>
               <div className="service-card__header">
                 <h3>Systems &amp; Growth Infrastructure</h3>
                 <p className="service-card__lead">Led by Sam</p>
@@ -343,7 +385,7 @@ export default function Home() {
                 num: 3,
                 week: 'Weeks 3\u20138',
                 title: 'Implementation',
-                desc: 'Our full team goes to work. Chey installs brand improvements and UGC campaigns. Katie installs consultation scripts and pricing optimization. Sam installs the CRM, automations, and analytics dashboards.',
+                desc: 'Our full team goes to work. Chey builds your brand identity and website. Gabby installs your content strategy and organic growth systems. Katie installs consultation scripts and pricing optimization. Sam installs the CRM, automations, and analytics dashboards.',
                 deliverable: 'Fully Installed Growth Systems',
               },
               {
@@ -492,25 +534,32 @@ export default function Home() {
             <p className="section__tag">The Team</p>
             <h2 className="section__title">Your Growth Partners</h2>
             <p className="section__subtitle">
-              Three specialists, one mission: install scalable growth systems
+              Four specialists, one mission: install scalable growth systems
               into your clinic.
             </p>
           </div>
-          <div className="team-grid">
+          <div className="team-grid team-grid--4">
             {[
               {
                 initial: 'C',
                 name: 'Chey',
-                role: 'Brand & Awareness',
-                desc: 'Creative strategist specializing in social media, influencer partnerships, and UGC campaigns that build clinic brand authority.',
+                role: 'Creative Direction & Brand Identity',
+                desc: 'Creative director specializing in brand identity, website design & development, visual systems, and business organization.',
                 featured: false,
+              },
+              {
+                initial: 'G',
+                name: 'Gabby',
+                role: 'Social Media & Content Strategy',
+                desc: 'Content strategist who builds organic growth systems, social media strategy, UGC pipelines, and influencer partnerships that drive trust and demand.',
+                featured: true,
               },
               {
                 initial: 'K',
                 name: 'Katie',
                 role: 'Sales & Revenue Strategy',
                 desc: 'Revenue strategist focused on consultation conversion, pricing optimization, memberships, and promotional campaigns.',
-                featured: true,
+                featured: false,
               },
               {
                 initial: 'S',
@@ -614,7 +663,8 @@ export default function Home() {
           <div className="footer__col">
             <h4>Services</h4>
             <ul>
-              <li><a href="#services">Brand &amp; Awareness</a></li>
+              <li><a href="#services">Creative &amp; Brand</a></li>
+              <li><a href="#services">Social &amp; Content</a></li>
               <li><a href="#services">Sales &amp; Revenue</a></li>
               <li><a href="#services">Systems &amp; Infrastructure</a></li>
               <li><a href="#audit">Growth Audit</a></li>

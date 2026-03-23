@@ -652,6 +652,10 @@ h1, h2, h3, h4 {
   gap: 24px;
 }
 
+.services-grid--4 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .service-card {
   background: var(--color-white);
   border: 1px solid rgba(153, 167, 183, 0.15);
@@ -1005,6 +1009,10 @@ h1, h2, h3, h4 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
+}
+
+.team-grid--4 {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .team-card {
@@ -1421,6 +1429,15 @@ h1, h2, h3, h4 {
     margin: 0 auto;
   }
 
+  .services-grid--4 {
+    grid-template-columns: 1fr;
+    max-width: 560px;
+  }
+
+  .team-grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .results-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1511,7 +1528,8 @@ h1, h2, h3, h4 {
     gap: 40px;
   }
 
-  .team-grid {
+  .team-grid,
+  .team-grid--4 {
     grid-template-columns: 1fr;
     max-width: 400px;
     margin: 0 auto;
