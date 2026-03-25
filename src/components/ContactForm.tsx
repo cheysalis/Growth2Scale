@@ -51,7 +51,7 @@ export default function ContactForm() {
       />
       <button
         type="submit"
-        className="btn btn--primary btn--lg btn--full"
+        className="btn btn--gold btn--lg btn--full"
         disabled={submitted}
         style={
           submitted

@@ -4,11 +4,15 @@ import { useEffect } from 'react';
 
 export default function ScrollAnimations() {
   useEffect(() => {
-    // Add fade-in class to all animatable elements
-    const selectors =
-      '.problem-card, .service-card, .process-step, .result-card, .team-card, .ideal-box, .pricing-card, .pricing-tier, .credibility-bar, .solution-feature, .image-divider, .video-divider, .audit-split__content, .audit-split__pricing, .solution-visual__image, .solution-visual__content';
-    const elements = document.querySelectorAll(selectors);
-    elements.forEach((el) => el.classList.add('fade-in'));
+    // Fade-in for cards and content blocks
+    const cardSelectors =
+      '.glass-card, .process-step, .image-divider, .audit-split__content, .audit-split__pricing, .solution-visual__image, .solution-visual__content, .credibility-bar';
+    const cards = document.querySelectorAll(cardSelectors);
+    cards.forEach((el) => el.classList.add('fade-in'));
+
+    // Section header animations
+    const headers = document.querySelectorAll('.section__header, .audit-split__content .section__tag, .ideal-split__left');
+    headers.forEach((el) => el.classList.add('section-header-animate'));
 
     // Hero entrance animation
     const heroContent = document.querySelector('.hero__content');
@@ -22,7 +26,6 @@ export default function ScrollAnimations() {
     // Staggered intersection observer
     const observer = new IntersectionObserver(
       (entries) => {
-        // Group entries by parent to stagger siblings
         const parentGroups = new Map<Element | null, Element[]>();
 
         entries.forEach((entry) => {
@@ -44,22 +47,23 @@ export default function ScrollAnimations() {
           });
         });
       },
-      { threshold: 0.1, rootMargin: '0px 0px -60px 0px' }
+      { threshold: 0.08, rootMargin: '0px 0px -40px 0px' }
     );
 
-    elements.forEach((el) => observer.observe(el));
+    cards.forEach((el) => observer.observe(el));
+    headers.forEach((el) => observer.observe(el));
 
-    // Parallax effect on image and video dividers
-    const dividers = document.querySelectorAll('.image-divider, .video-divider');
+    // Parallax effect on image dividers
+    const dividers = document.querySelectorAll('.image-divider');
     const handleScroll = () => {
       dividers.forEach((divider) => {
         const rect = divider.getBoundingClientRect();
         const visible = rect.top < window.innerHeight && rect.bottom > 0;
         if (visible) {
           const progress = (window.innerHeight - rect.top) / (window.innerHeight + rect.height);
-          const media = divider.querySelector('img, video');
+          const media = divider.querySelector('img');
           if (media) {
-            (media as HTMLElement).style.transform = `translateY(${(progress - 0.5) * 40}px) scale(1.05)`;
+            (media as HTMLElement).style.transform = `translateY(${(progress - 0.5) * 40}px) scale(1.08)`;
           }
         }
       });

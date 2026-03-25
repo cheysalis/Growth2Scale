@@ -11,8 +11,8 @@ export default function Navbar() {
       if (!nav) return;
       nav.style.background =
         window.scrollY > 50
-          ? 'rgba(29, 31, 33, 0.95)'
-          : 'rgba(29, 31, 33, 0.9)';
+          ? 'rgba(29, 31, 33, 0.92)'
+          : 'rgba(29, 31, 33, 0.8)';
     };
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
@@ -44,7 +44,7 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
-        <a href="#book" className="btn btn--primary nav__cta">
+        <a href="#book" className="btn btn--glass nav__cta">
           Book a Consultation
         </a>
         <button

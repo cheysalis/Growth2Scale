@@ -24,22 +24,17 @@ export default function Home() {
       <ScrollAnimations />
       <Navbar />
 
-      {/* Hero with Video Background */}
+      {/* Hero */}
       <header className="hero" id="hero">
-        <div className="hero__video-bg">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            poster="https://images.unsplash.com/photo-1540555700478-4be289fbec6e?w=1920&q=80"
-          >
-            <source
-              src="https://videos.pexels.com/video-files/5765285/5765285-uhd_2732_1440_25fps.mp4"
-              type="video/mp4"
-            />
-          </video>
-          <div className="hero__video-overlay" />
+        <div className="hero__image-bg">
+          <Image
+            src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=1920&q=90"
+            alt="Luxury skincare serum close-up"
+            fill
+            style={{ objectFit: 'cover' }}
+            priority
+          />
+          <div className="hero__overlay" />
         </div>
         <div className="container hero__inner">
           <div className="hero__content">
@@ -56,10 +51,10 @@ export default function Home() {
               longevity clinics &mdash; in 90 days.
             </p>
             <div className="hero__actions">
-              <a href="#book" className="btn btn--primary btn--lg">
+              <a href="#book" className="btn btn--gold btn--lg">
                 Book a Free Consultation
               </a>
-              <a href="#audit" className="btn btn--outline btn--lg">
+              <a href="#audit" className="btn btn--glass btn--lg">
                 Get a Growth Audit
               </a>
             </div>
@@ -88,7 +83,7 @@ export default function Home() {
       </header>
 
       {/* Problem */}
-      <section className="section section--light" id="problem">
+      <section className="section" id="problem">
         <div className="container">
           <div className="section__header">
             <div className="line-accent" />
@@ -103,30 +98,30 @@ export default function Home() {
             </p>
           </div>
           <div className="problems-grid">
-            <div className="problem-card">
-              <div className="problem-card__icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><line x1="12" y1="8" x2="12" y2="12" /><line x1="12" y1="16" x2="12.01" y2="16" /></svg>
+            <div className="glass-card">
+              <div className="glass-card__icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><line x1="12" y1="8" x2="12" y2="12" /><line x1="12" y1="16" x2="12.01" y2="16" /></svg>
               </div>
               <h3>Inconsistent Leads</h3>
               <p>Your marketing spend fluctuates, and you never know where next month&apos;s patients are coming from.</p>
             </div>
-            <div className="problem-card">
-              <div className="problem-card__icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2" /></svg>
+            <div className="glass-card">
+              <div className="glass-card__icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2" /></svg>
               </div>
               <h3>Poor Consultation Conversion</h3>
               <p>Leads come in but don&apos;t convert. Your team lacks the scripts, strategies, and follow-up systems to close.</p>
             </div>
-            <div className="problem-card">
-              <div className="problem-card__icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2" /><line x1="8" y1="21" x2="16" y2="21" /><line x1="12" y1="17" x2="12" y2="21" /></svg>
+            <div className="glass-card">
+              <div className="glass-card__icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2" /><line x1="8" y1="21" x2="16" y2="21" /><line x1="12" y1="17" x2="12" y2="21" /></svg>
               </div>
               <h3>Weak Systems</h3>
               <p>No CRM, no automations, no dashboards. You&apos;re running a million-dollar business on spreadsheets and gut feel.</p>
             </div>
-            <div className="problem-card">
-              <div className="problem-card__icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="1" x2="12" y2="23" /><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg>
+            <div className="glass-card">
+              <div className="glass-card__icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="1" x2="12" y2="23" /><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg>
               </div>
               <h3>Unclear Margins</h3>
               <p>You&apos;re busy but not profitable enough. Pricing, memberships, and treatment menus aren&apos;t optimized for growth.</p>
@@ -135,31 +130,25 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Video Divider — Medspa Treatment */}
-      <div className="video-divider video-divider--to-dark">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          poster="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1600&q=80"
-        >
-          <source
-            src="https://videos.pexels.com/video-files/6981411/6981411-uhd_2560_1440_25fps.mp4"
-            type="video/mp4"
-          />
-        </video>
-        <div className="video-divider__overlay video-divider__overlay--to-dark" />
+      {/* Image Divider — Close-up facial */}
+      <div className="image-divider">
+        <Image
+          src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1600&q=90"
+          alt="Close-up luxury skincare application"
+          fill
+          style={{ objectFit: 'cover' }}
+        />
+        <div className="image-divider__overlay" />
       </div>
 
-      {/* Solution — expanded with image */}
-      <section className="section section--dark" id="solution">
+      {/* Solution */}
+      <section className="section" id="solution">
         <div className="container">
           <div className="solution-visual">
             <div className="solution-visual__image">
               <Image
-                src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&q=80"
-                alt="Luxury skincare treatment at medspa"
+                src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=800&q=90"
+                alt="Close-up luxury beauty treatment"
                 fill
                 style={{ objectFit: 'cover' }}
               />
@@ -173,38 +162,38 @@ export default function Home() {
                 strategy, revenue systems, and growth infrastructure.
               </p>
               <div className="solution-features">
-                <div className="solution-feature">
-                  <div className="solution-feature__icon">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z" /><path d="M2 17l10 5 10-5" /><path d="M2 12l10 5 10-5" /></svg>
+                <div className="solution-feature glass-card glass-card--row">
+                  <div className="glass-card__icon glass-card__icon--sm">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z" /><path d="M2 17l10 5 10-5" /><path d="M2 12l10 5 10-5" /></svg>
                   </div>
-                  <div className="solution-feature__text">
+                  <div>
                     <h4>Creative &amp; Brand Identity</h4>
                     <p>Build a premium brand that commands authority</p>
                   </div>
                 </div>
-                <div className="solution-feature">
-                  <div className="solution-feature__icon">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2" /><polyline points="8 21 12 17 16 21" /></svg>
+                <div className="solution-feature glass-card glass-card--row">
+                  <div className="glass-card__icon glass-card__icon--sm">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2" /><polyline points="8 21 12 17 16 21" /></svg>
                   </div>
-                  <div className="solution-feature__text">
+                  <div>
                     <h4>Social &amp; Content Strategy</h4>
                     <p>Organic content that builds trust and demand</p>
                   </div>
                 </div>
-                <div className="solution-feature">
-                  <div className="solution-feature__icon">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="1" x2="12" y2="23" /><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg>
+                <div className="solution-feature glass-card glass-card--row">
+                  <div className="glass-card__icon glass-card__icon--sm">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="1" x2="12" y2="23" /><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg>
                   </div>
-                  <div className="solution-feature__text">
+                  <div>
                     <h4>Revenue Systems</h4>
                     <p>Convert more consultations into paying clients</p>
                   </div>
                 </div>
-                <div className="solution-feature">
-                  <div className="solution-feature__icon">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" /></svg>
+                <div className="solution-feature glass-card glass-card--row">
+                  <div className="glass-card__icon glass-card__icon--sm">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" /></svg>
                   </div>
-                  <div className="solution-feature__text">
+                  <div>
                     <h4>Growth Analytics</h4>
                     <p>Track every metric that drives your business</p>
                   </div>
@@ -215,14 +204,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Image Divider — Medspa Ambiance */}
-      <div className="image-divider image-divider--from-dark">
+      {/* Image Divider — Close-up products */}
+      <div className="image-divider">
         <Image
-          src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=1600&q=80"
-          alt="Luxury medspa facial treatment"
+          src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=1600&q=90"
+          alt="Close-up luxury skincare products"
           fill
           style={{ objectFit: 'cover' }}
         />
+        <div className="image-divider__overlay" />
       </div>
 
       {/* Services */}
@@ -233,18 +223,18 @@ export default function Home() {
             <p className="section__tag">What We Install</p>
             <h2 className="section__title">Four Layers of Growth</h2>
           </div>
-          <div className="services-grid services-grid--4">
+          <div className="services-grid">
             {/* Layer 1 — Chey */}
-            <div className="service-card">
-              <div className="service-card__number">01</div>
-              <div className="service-card__header">
+            <div className="glass-card glass-card--service">
+              <div className="glass-card__number">01</div>
+              <div className="glass-card__header">
                 <h3>Creative Direction &amp; Brand Identity</h3>
-                <p className="service-card__lead">Led by Chey</p>
+                <p className="glass-card__lead">Led by Chey</p>
               </div>
-              <p className="service-card__problem">
+              <p className="glass-card__problem">
                 Solves: <em>&ldquo;Our brand doesn&apos;t reflect our quality.&rdquo;</em>
               </p>
-              <div className="service-card__services">
+              <div className="glass-card__list">
                 <h4>Services</h4>
                 <ul>
                   <li>Brand identity &amp; creative direction</li>
@@ -255,7 +245,7 @@ export default function Home() {
                   <li>Brand photography direction</li>
                 </ul>
               </div>
-              <div className="service-card__deliverables">
+              <div className="glass-card__list">
                 <h4>Deliverables</h4>
                 <ul>
                   <li>Complete brand identity guide</li>
@@ -267,16 +257,16 @@ export default function Home() {
             </div>
 
             {/* Layer 2 — Gabbie */}
-            <div className="service-card service-card--featured">
-              <div className="service-card__number">02</div>
-              <div className="service-card__header">
+            <div className="glass-card glass-card--service glass-card--featured">
+              <div className="glass-card__number">02</div>
+              <div className="glass-card__header">
                 <h3>Social Media &amp; Content Strategy</h3>
-                <p className="service-card__lead">Led by Gabbie</p>
+                <p className="glass-card__lead">Led by Gabbie</p>
               </div>
-              <p className="service-card__problem">
+              <p className="glass-card__problem">
                 Solves: <em>&ldquo;We post but nothing grows.&rdquo;</em>
               </p>
-              <div className="service-card__services">
+              <div className="glass-card__list">
                 <h4>Services</h4>
                 <ul>
                   <li>Social media audits &amp; strategy</li>
@@ -288,7 +278,7 @@ export default function Home() {
                   <li>Social engagement &amp; audience nurturing</li>
                 </ul>
               </div>
-              <div className="service-card__deliverables">
+              <div className="glass-card__list">
                 <h4>Deliverables</h4>
                 <ul>
                   <li>Organic content strategy</li>
@@ -300,16 +290,16 @@ export default function Home() {
             </div>
 
             {/* Layer 3 — Katie */}
-            <div className="service-card">
-              <div className="service-card__number">03</div>
-              <div className="service-card__header">
+            <div className="glass-card glass-card--service">
+              <div className="glass-card__number">03</div>
+              <div className="glass-card__header">
                 <h3>Sales &amp; Revenue Strategy</h3>
-                <p className="service-card__lead">Led by Katie</p>
+                <p className="glass-card__lead">Led by Katie</p>
               </div>
-              <p className="service-card__problem">
+              <p className="glass-card__problem">
                 Solves: <em>&ldquo;We get leads but they don&apos;t convert.&rdquo;</em>
               </p>
-              <div className="service-card__services">
+              <div className="glass-card__list">
                 <h4>Services</h4>
                 <ul>
                   <li>Consultation sales scripts</li>
@@ -321,7 +311,7 @@ export default function Home() {
                   <li>Event strategies</li>
                 </ul>
               </div>
-              <div className="service-card__deliverables">
+              <div className="glass-card__list">
                 <h4>Deliverables</h4>
                 <ul>
                   <li>Consultation sales playbook</li>
@@ -333,16 +323,16 @@ export default function Home() {
             </div>
 
             {/* Layer 4 — Sam */}
-            <div className="service-card">
-              <div className="service-card__number">04</div>
-              <div className="service-card__header">
+            <div className="glass-card glass-card--service">
+              <div className="glass-card__number">04</div>
+              <div className="glass-card__header">
                 <h3>Systems &amp; Growth Infrastructure</h3>
-                <p className="service-card__lead">Led by Sam</p>
+                <p className="glass-card__lead">Led by Sam</p>
               </div>
-              <p className="service-card__problem">
+              <p className="glass-card__problem">
                 Solves: <em>&ldquo;Our systems are a mess.&rdquo;</em>
               </p>
-              <div className="service-card__services">
+              <div className="glass-card__list">
                 <h4>Services</h4>
                 <ul>
                   <li>CRM setup (GoHighLevel / HubSpot)</li>
@@ -353,7 +343,7 @@ export default function Home() {
                   <li>Pipeline management</li>
                 </ul>
               </div>
-              <div className="service-card__deliverables">
+              <div className="glass-card__list">
                 <h4>Deliverables</h4>
                 <ul>
                   <li>CRM pipeline setup</li>
@@ -368,7 +358,7 @@ export default function Home() {
       </section>
 
       {/* Process */}
-      <section className="section section--light" id="process">
+      <section className="section" id="process">
         <div className="container">
           <div className="section__header">
             <div className="line-accent" />
@@ -413,7 +403,7 @@ export default function Home() {
                 <div className="process-step__marker">
                   <span>{step.num}</span>
                 </div>
-                <div className="process-step__content">
+                <div className="process-step__content glass-card">
                   <div className="process-step__week">{step.week}</div>
                   <h3>{step.title}</h3>
                   <p>{step.desc}</p>
@@ -427,18 +417,19 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Image Divider — Medspa Products */}
-      <div className="image-divider image-divider--accent">
+      {/* Image Divider — Close-up treatment */}
+      <div className="image-divider">
         <Image
-          src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=1600&q=80"
-          alt="Luxury medspa skincare products"
+          src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1600&q=90"
+          alt="Close-up luxury facial massage treatment"
           fill
           style={{ objectFit: 'cover' }}
         />
+        <div className="image-divider__overlay" />
       </div>
 
       {/* Growth Audit */}
-      <section className="section section--accent" id="audit">
+      <section className="section" id="audit">
         <div className="container">
           <div className="audit-split">
             <div className="audit-split__content">
@@ -466,32 +457,32 @@ export default function Home() {
                   ))}
                 </ul>
               </div>
-              <a href="#book" className="btn btn--dark btn--lg">
+              <a href="#book" className="btn btn--gold btn--lg">
                 Get Your Growth Audit &rarr;
               </a>
             </div>
             <div className="audit-split__pricing">
-              <div className="pricing-card">
+              <div className="glass-card glass-card--pricing">
                 <h3>Growth Audit</h3>
-                <div className="pricing-card__price">$1,500</div>
+                <div className="glass-card__price">$1,500</div>
                 <p>
                   Comprehensive business analysis with actionable growth roadmap
                 </p>
                 <hr />
-                <p className="pricing-card__note">
+                <p className="glass-card__note">
                   Many clinics start here, then upgrade to our full Clinic
                   Growth System.
                 </p>
               </div>
               <div className="pricing-tiers">
-                <div className="pricing-tier">
+                <div className="glass-card glass-card--tier">
                   <h4>System Implementation</h4>
-                  <p className="pricing-tier__price">$5,000 &ndash; $12,000</p>
+                  <p className="glass-card__tier-price">$5,000 &ndash; $12,000</p>
                   <p>Full 90-day growth system installation</p>
                 </div>
-                <div className="pricing-tier">
+                <div className="glass-card glass-card--tier">
                   <h4>Monthly Growth Management</h4>
-                  <p className="pricing-tier__price">
+                  <p className="glass-card__tier-price">
                     $2,000 &ndash; $6,000/mo
                   </p>
                   <p>Ongoing optimization &amp; growth management</p>
@@ -523,13 +514,13 @@ export default function Home() {
               { metric: '90 Days', desc: 'From audit to fully operational growth systems' },
               { metric: '$1M-$5M', desc: 'The revenue range of clinics we serve best' },
             ].map((r) => (
-              <div className="result-card" key={r.metric}>
-                <div className="result-card__metric">{r.metric}</div>
+              <div className="glass-card glass-card--result" key={r.metric}>
+                <div className="glass-card__metric">{r.metric}</div>
                 <p>{r.desc}</p>
               </div>
             ))}
           </div>
-          <div className="credibility-bar">
+          <div className="credibility-bar glass-card">
             <p>
               We&apos;re not a marketing agency. We&apos;re{' '}
               <strong>growth operators</strong> who have built and scaled real
@@ -540,7 +531,7 @@ export default function Home() {
       </section>
 
       {/* Team */}
-      <section className="section section--light" id="team">
+      <section className="section" id="team">
         <div className="container">
           <div className="section__header">
             <div className="line-accent" />
@@ -551,7 +542,7 @@ export default function Home() {
               into your clinic.
             </p>
           </div>
-          <div className="team-grid team-grid--4">
+          <div className="team-grid">
             {[
               {
                 initial: 'C',
@@ -583,15 +574,15 @@ export default function Home() {
               },
             ].map((member) => (
               <div
-                className={`team-card${member.featured ? ' team-card--featured' : ''}`}
+                className={`glass-card glass-card--team${member.featured ? ' glass-card--featured' : ''}`}
                 key={member.name}
               >
-                <div className="team-card__avatar">
-                  <div className="avatar-placeholder">{member.initial}</div>
+                <div className="team-avatar">
+                  <span>{member.initial}</span>
                 </div>
                 <h3>{member.name}</h3>
-                <p className="team-card__role">{member.role}</p>
-                <p className="team-card__desc">{member.desc}</p>
+                <p className="team-role">{member.role}</p>
+                <p className="team-desc">{member.desc}</p>
               </div>
             ))}
           </div>
@@ -611,7 +602,7 @@ export default function Home() {
               </p>
             </div>
             <div className="ideal-split__right">
-              <div className="ideal-box ideal-box--yes">
+              <div className="glass-card glass-card--ideal glass-card--yes">
                 <h4>Great Fit</h4>
                 <ul>
                   <li>$1M&ndash;$5M in annual revenue</li>
@@ -620,7 +611,7 @@ export default function Home() {
                   <li>Ready to invest in real infrastructure</li>
                 </ul>
               </div>
-              <div className="ideal-box ideal-box--no">
+              <div className="glass-card glass-card--ideal glass-card--no">
                 <h4>Not the Right Fit</h4>
                 <ul>
                   <li>Startups without existing revenue</li>
@@ -634,21 +625,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Video Divider before CTA — Medspa Ambiance */}
-      <div className="video-divider video-divider--to-dark">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          poster="https://images.unsplash.com/photo-1552693673-1bf958298935?w=1600&q=80"
-        >
-          <source
-            src="https://videos.pexels.com/video-files/5765285/5765285-uhd_2732_1440_25fps.mp4"
-            type="video/mp4"
-          />
-        </video>
-        <div className="video-divider__overlay video-divider__overlay--to-dark" />
+      {/* Image Divider — Close-up before CTA */}
+      <div className="image-divider">
+        <Image
+          src="https://images.unsplash.com/photo-1552693673-1bf958298935?w=1600&q=90"
+          alt="Close-up luxury spa treatment detail"
+          fill
+          style={{ objectFit: 'cover' }}
+        />
+        <div className="image-divider__overlay" />
       </div>
 
       {/* CTA / Book */}
