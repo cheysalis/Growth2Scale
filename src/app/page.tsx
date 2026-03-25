@@ -426,8 +426,8 @@ export default function Home() {
       {/* Image Divider — Close-up treatment */}
       <div className="image-divider">
         <Image
-          src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=1600&q=90"
-          alt="Woman receiving luxury facial spa treatment"
+          src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=1600&q=90"
+          alt="Luxury medspa injectable treatment in dark elegant setting"
           fill
           style={{ objectFit: 'cover' }}
         />
