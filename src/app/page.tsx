@@ -33,7 +33,7 @@ export default function Home() {
             loop
             playsInline
             className="hero__video"
-            poster="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1920&q=90"
+            poster="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=1920&q=90"
           >
             <source
               src="https://videos.pexels.com/video-files/6587982/6587982-hd_1920_1080_25fps.mp4"
@@ -426,8 +426,8 @@ export default function Home() {
       {/* Image Divider — Close-up treatment */}
       <div className="image-divider">
         <Image
-          src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=1600&q=90"
-          alt="Luxury medspa microneedling treatment close-up"
+          src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=1600&q=90"
+          alt="Woman receiving luxury facial spa treatment"
           fill
           style={{ objectFit: 'cover' }}
         />
@@ -634,8 +634,8 @@ export default function Home() {
       {/* Image Divider — Close-up before CTA */}
       <div className="image-divider">
         <Image
-          src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1600&q=90"
-          alt="Premium medspa luxury interior lounge"
+          src="https://images.unsplash.com/photo-1540555700478-4be289fbec6d?w=1600&q=90"
+          alt="Luxury spa relaxation treatment ambiance"
           fill
           style={{ objectFit: 'cover' }}
         />
