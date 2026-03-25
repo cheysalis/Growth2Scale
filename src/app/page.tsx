@@ -562,7 +562,7 @@ export default function Home() {
                 name: 'Gabbie',
                 role: 'Social Media & Content Strategy',
                 desc: 'Content strategist who builds organic growth systems, social media strategy, UGC pipelines, and influencer partnerships that drive trust and demand.',
-                featured: true,
+                featured: false,
               },
               {
                 initial: 'K',
