@@ -33,7 +33,7 @@ export default function Home() {
             loop
             playsInline
             className="hero__video"
-            poster="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=1920&q=90"
+            poster="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1920&q=90"
           >
             <source
               src="https://videos.pexels.com/video-files/6587982/6587982-hd_1920_1080_25fps.mp4"
@@ -139,8 +139,8 @@ export default function Home() {
       {/* Image Divider — Close-up facial */}
       <div className="image-divider">
         <Image
-          src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=1600&q=90"
-          alt="Woman receiving luxury medspa hydrafacial treatment"
+          src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=1600&q=90"
+          alt="Cosmetic botox injection treatment at luxury medspa"
           fill
           style={{ objectFit: 'cover' }}
         />
@@ -161,7 +161,7 @@ export default function Home() {
             </div>
             <div className="solution-visual__content">
               <p className="section__tag">The Solution</p>
-              <h2 className="section__title">The Clinic Growth System</h2>
+              <h2 className="section__title">The Med Spa Growth System</h2>
               <p>
                 A 90-day transformation that installs four layers of growth
                 inside your clinic &mdash; creative brand identity, social content
@@ -213,8 +213,8 @@ export default function Home() {
       {/* Image Divider — Close-up products */}
       <div className="image-divider">
         <Image
-          src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1600&q=90"
-          alt="Luxury medspa dermal filler treatment close-up"
+          src="https://images.unsplash.com/photo-1598984531148-effbddeb7754?w=1600&q=90"
+          alt="Dermal filler lip injection at aesthetic medspa clinic"
           fill
           style={{ objectFit: 'cover' }}
         />
@@ -426,8 +426,8 @@ export default function Home() {
       {/* Image Divider — Close-up treatment */}
       <div className="image-divider">
         <Image
-          src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=1600&q=90"
-          alt="Luxury medspa injectable treatment in dark elegant setting"
+          src="https://images.unsplash.com/photo-1629909615184-74f495363b67?w=1600&q=90"
+          alt="LED light therapy facial treatment at luxury medspa"
           fill
           style={{ objectFit: 'cover' }}
         />
