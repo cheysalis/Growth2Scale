@@ -35,7 +35,7 @@ export default function Home() {
             poster="https://images.unsplash.com/photo-1540555700478-4be289fbec6e?w=1920&q=80"
           >
             <source
-              src="https://videos.pexels.com/video-files/3209828/3209828-uhd_2560_1440_25fps.mp4"
+              src="https://videos.pexels.com/video-files/5765285/5765285-uhd_2732_1440_25fps.mp4"
               type="video/mp4"
             />
           </video>

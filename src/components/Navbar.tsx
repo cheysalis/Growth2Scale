@@ -11,8 +11,8 @@ export default function Navbar() {
       if (!nav) return;
       nav.style.background =
         window.scrollY > 50
-          ? 'rgba(47, 53, 69, 0.95)'
-          : 'rgba(47, 53, 69, 0.9)';
+          ? 'rgba(29, 31, 33, 0.95)'
+          : 'rgba(29, 31, 33, 0.9)';
     };
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);

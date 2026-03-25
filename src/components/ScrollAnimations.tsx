@@ -40,7 +40,7 @@ export default function ScrollAnimations() {
           children.forEach((child, i) => {
             setTimeout(() => {
               child.classList.add('visible');
-            }, i * 120);
+            }, i * 150);
           });
         });
       },

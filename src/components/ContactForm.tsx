@@ -55,7 +55,7 @@ export default function ContactForm() {
         disabled={submitted}
         style={
           submitted
-            ? { background: '#22c55e', borderColor: '#22c55e' }
+            ? { background: '#cdac68', borderColor: '#cdac68', color: '#1d1f21' }
             : undefined
         }
       >
