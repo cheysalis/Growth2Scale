@@ -631,25 +631,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Image Divider — Close-up before CTA */}
-      <div className="image-divider">
-        <Image
-          src="https://images.unsplash.com/photo-1540555700478-4be289fbec6d?w=1600&q=90"
-          alt="Luxury spa relaxation treatment ambiance"
-          fill
-          style={{ objectFit: 'cover' }}
-        />
-        <div className="image-divider__overlay" />
-      </div>
-
       {/* CTA / Book */}
       <section className="section section--cta" id="book">
         <div className="container">
           <div className="cta-content">
-            <h2>Ready to Scale Your Clinic?</h2>
+            <h2>Ready to Scale Your Med Spa?</h2>
             <p>
               Book a free consultation and we&apos;ll show you exactly where
-              your clinic is leaving revenue on the table &mdash; and how to fix
+              your med spa is leaving revenue on the table &mdash; and how to fix
               it.
             </p>
             <ContactForm />
