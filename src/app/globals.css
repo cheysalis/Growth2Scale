@@ -1283,11 +1283,13 @@ h1, h2, h3, h4 {
   }
 
   .nav.nav--open .nav__cta {
-    display: inline-flex;
-    position: absolute;
-    top: calc(72px + 200px);
+    display: flex;
+    position: fixed;
     left: 24px;
     right: 24px;
+    bottom: 24px;
+    z-index: 1001;
+    justify-content: center;
   }
 
   .hero {
@@ -1295,7 +1297,7 @@ h1, h2, h3, h4 {
   }
 
   .hero__inner {
-    padding: 120px 0 80px;
+    padding: 120px 20px 80px;
   }
 
   .hero__title {
@@ -1342,6 +1344,13 @@ h1, h2, h3, h4 {
 
   .hero__actions {
     flex-direction: column;
+    width: 100%;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
   }
 
   .footer__inner {
