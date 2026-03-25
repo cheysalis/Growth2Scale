@@ -27,13 +27,19 @@ export default function Home() {
       {/* Hero */}
       <header className="hero" id="hero">
         <div className="hero__image-bg">
-          <Image
-            src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=1920&q=90"
-            alt="Luxury skincare serum close-up"
-            fill
-            style={{ objectFit: 'cover' }}
-            priority
-          />
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="hero__video"
+            poster="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1920&q=90"
+          >
+            <source
+              src="https://videos.pexels.com/video-files/6587982/6587982-hd_1920_1080_25fps.mp4"
+              type="video/mp4"
+            />
+          </video>
           <div className="hero__overlay" />
         </div>
         <div className="container hero__inner">
@@ -133,8 +139,8 @@ export default function Home() {
       {/* Image Divider — Close-up facial */}
       <div className="image-divider">
         <Image
-          src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1600&q=90"
-          alt="Close-up luxury skincare application"
+          src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=1600&q=90"
+          alt="Luxury medspa LED facial treatment close-up"
           fill
           style={{ objectFit: 'cover' }}
         />
@@ -147,8 +153,8 @@ export default function Home() {
           <div className="solution-visual">
             <div className="solution-visual__image">
               <Image
-                src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=800&q=90"
-                alt="Close-up luxury beauty treatment"
+                src="https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=800&q=90"
+                alt="Luxury medspa treatment room interior"
                 fill
                 style={{ objectFit: 'cover' }}
               />
@@ -207,8 +213,8 @@ export default function Home() {
       {/* Image Divider — Close-up products */}
       <div className="image-divider">
         <Image
-          src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=1600&q=90"
-          alt="Close-up luxury skincare products"
+          src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1600&q=90"
+          alt="Luxury medspa dermal filler treatment close-up"
           fill
           style={{ objectFit: 'cover' }}
         />
@@ -420,8 +426,8 @@ export default function Home() {
       {/* Image Divider — Close-up treatment */}
       <div className="image-divider">
         <Image
-          src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1600&q=90"
-          alt="Close-up luxury facial massage treatment"
+          src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=1600&q=90"
+          alt="Luxury medspa microneedling treatment close-up"
           fill
           style={{ objectFit: 'cover' }}
         />
@@ -628,8 +634,8 @@ export default function Home() {
       {/* Image Divider — Close-up before CTA */}
       <div className="image-divider">
         <Image
-          src="https://images.unsplash.com/photo-1552693673-1bf958298935?w=1600&q=90"
-          alt="Close-up luxury spa treatment detail"
+          src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1600&q=90"
+          alt="Premium medspa luxury interior lounge"
           fill
           style={{ objectFit: 'cover' }}
         />
