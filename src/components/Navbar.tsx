@@ -43,6 +43,11 @@ export default function Navbar() {
               </a>
             </li>
           ))}
+          <li className="nav__mobile-cta">
+            <a href="#book" className="btn btn--gold" onClick={handleLinkClick}>
+              Book a Consultation
+            </a>
+          </li>
         </ul>
         <a href="#book" className="btn btn--glass nav__cta">
           Book a Consultation

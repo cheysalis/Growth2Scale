@@ -1283,12 +1283,22 @@ h1, h2, h3, h4 {
   }
 
   .nav.nav--open .nav__cta {
+    display: none;
+  }
+
+  .nav__mobile-cta {
+    display: none;
+    list-style: none;
+  }
+
+  .nav.nav--open .nav__mobile-cta {
     display: flex;
-    position: fixed;
-    left: 24px;
-    right: 24px;
-    bottom: 24px;
-    z-index: 1001;
+    margin-top: 8px;
+  }
+
+  .nav.nav--open .nav__mobile-cta .btn {
+    width: 100%;
+    text-align: center;
     justify-content: center;
   }
 
